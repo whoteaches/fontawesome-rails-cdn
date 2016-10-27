@@ -25,7 +25,7 @@ module FontAwesome::Rails::CDN
       version  = options[:version] || FONTAWESOME_VERSIONS.first
 
       {
-        :netdna => "//maxcdn.bootstrapcdn.com/font-awesome/#{version}/css/font-awesome.min.css",
+        :maxcdn => "//maxcdn.bootstrapcdn.com/font-awesome/#{version}/css/font-awesome.min.css",
         :local  => "font-awesome-#{version}.min.css"
       }[host]
     end
